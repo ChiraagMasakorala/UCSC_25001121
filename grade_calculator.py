@@ -18,9 +18,13 @@ def main():
     print(f"\nStudent Name: {name}")
     print(f"Average Marks: {average:.2f}")
 
-    # Pass/Fail logic
-    if average >= 40:
-        print("Status: Pass")
+    # Grading logic
+    if average >= 75:
+        print("Grade: A")
+    elif average >= 60:
+        print("Grade: B")
+    elif average >= 40:
+        print("Grade: C")
     else:
         print("Status: Fail")
 
